@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header>
+    <div class="tab">
+        <a href="index.html"> <button class="tablinks" > Main Page </button></a>
+        <a href="blog.html"> <button class="tablinks" > Blog </button></a>
+        <a href="services.html" ><button class="tablinks">Services</button></a>
+        <a href="team.html"  > <button class="tablinks"> Team</button></a>
+        <a href="gallery.html"  ><button class="tablinks" onclick="">Gallery</button></a>
+         <button class="tablinks"> <em>Contact Us</em></button>
+        <a href="registration.html"><button class="tablinks"> Register</button></a>
+    </div>
+</header>
+
+<nav>
+
+
+    <form action="http://www.google.com/search" method="get">
+        <label>Search On Google :</label>
+        <input type="hidden" name="q"  value="">
+        <label>
+            <input type="text" name="q" placeholder="Search" alt="search">
+        </label>
+        <input  type="submit" value="Search">
+    </form>
+</nav>
+
+        <form class="form" target="_self" action="response.html">
+            <fieldset>
+                <legend>Contact Us!</legend>
+    <label>
+        <input name = "name" placeholder="name">
+    </label>
+        <br><br>
+    <label>
+        <input name="surname" placeholder="Surname">
+    </label>
+        <br><br>
+    <label>
+        <input name="email" placeholder="email" type="email">
+    </label>
+        <br><br>
+    <label>
+        <input name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999">
+    </label>
+        <br><br>
+        <label>
+            <input name="Problem" placeholder="Problem">
+        </label>
+        <br><br>
+                <label>What Kind Of Animal has issue? </label>
+                <br>
+                <br>
+                <div class="pad">
+                <input type="radio" name="Animal" value="Dog" id="Dog">
+                <label for = "Dog">Dog</label><br>
+                <input type="radio" name="Animal" value="cat" id="Cat">
+                <label for = "Cat">Cat</label><br>
+                <input type="radio" name="Animal" value="Bird" id="Bird">
+                <label for = "Bird">Bird</label><br>
+                <input type="radio" name="Animal" value="other" id="Other">
+                <label for = "Other">Other</label><br></div>
+        <label >
+            <textarea name="message" placeholder="Message" rows="5" cols="75" id="TITLE">
+</textarea>
+        </label>
+                <label>
+                    <input type="submit" value="submit" >
+                </label>
+            </fieldset>
+        </form>
+<br>
+
+<section id ="formPage">
+    <h2>OR</h2>
+    <h3>You can click this link below to mail Us!</h3><br>
+    <a href="mailto:igcompany@gmail.com" style="color: darkred;font-size: larger;" >Ig Company</a>
+    <br><br>
+    <a href="index.html"><button class="icon"><i class="fa fa-home"></i></button></a>
+    <br><br>
+    <a href="https://www.facebook.com"><button class="icon"><i class="fa fa-facebook"></i></button></a>
+    <a href="https://twitter.com"><button class="icon"><i class="fa fa-twitter"></i></button></a>
+    <a href="https://www.instagram.com"><button class="icon"><i class="fa fa-instagram"></i></button></a>
+<br>
+</section>
+
+
+<footer>
+    &copy; 2020 all rights reserved IG Company
+</footer>
+</body>
+</html>

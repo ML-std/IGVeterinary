@@ -1,0 +1,247 @@
+body {
+    background-color: powderblue;
+    position: static;
+}
+hr{
+
+    border-style: dashed;
+    color: yellow;
+}
+button{
+    text-align: center;
+}
+form{
+
+    text-align: end;
+}
+em{
+    color: chocolate;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+a:active{
+    color: yellow;
+}
+label{
+    font-weight: bolder;
+}
+header{
+    border: aliceblue;
+}
+.tab {
+    text-align: center;
+    border: blue;
+    position: center;
+    
+}
+.tab button {
+    background-color: yellowgreen;
+    float: left;
+    border: darkblue;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 25px;
+    transition: 0.3s;
+    color: aqua;
+}
+.tab button:hover {
+
+    background-color: antiquewhite;
+
+}
+.tab button.active {
+    background-color: teal;
+}
+.center{
+    position: center;
+    text-align: center;
+    font-size: larger;
+
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+h4{
+    font-style: italic;
+    text-align: center;
+    color: purple;
+}
+img {
+  width: 200px;
+}
+
+section {
+    float: left;
+    padding: 3em;
+    width: 50em;
+
+    /* only for demonstration, should be removed */
+}
+aside{
+    padding-top: 4em;
+
+}
+aside:after{
+    content: "";
+    display: table;
+    clear: both;
+    font-size: 6em;
+
+}
+nav{
+    padding-top: 70px;
+}
+hr.another{
+color: powderblue;
+}
+section.centeredSection{
+    image-resolution: from-image;
+    position: center;
+}
+img.clickable{
+    width: 10em ;
+    height: 10em ;
+    padding-right : 5em ;
+    float: left;
+    border-radius: 50%;
+
+}
+figure {
+    width: 15%;
+    float: left;
+    margin: 1.16em;
+    text-align: center;
+    padding: 1em;
+}
+
+figcaption{
+    font-style: oblique;
+    color:palevioletred;
+    font-size: 1em;
+    text-align: center;
+}
+h3{
+    text-align: center;
+   color: darkred;
+    font-family: "Times New Roman", sans-serif ;
+}
+div{
+float: left;
+
+}
+section{
+    float: right;
+}
+.blog{
+    font-size: larger;
+}
+footer{
+    background-color: black;
+    color: #cccccc;
+    position: fixed;
+    float: end;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+section.right{
+    background-color: powderblue;
+    float: right;
+    padding-right: 0.2em;
+    width: 15em;
+}
+.index{
+    padding-right: 0.5em;
+width: 18em;
+}
+article{
+    padding-bottom: 5em;
+}
+.form{
+    text-align: left;
+    padding-right: 20em;
+    padding-left: 20em;
+}
+
+.left{
+    float: left;
+}
+br{
+    padding-top: 1em;
+}
+form label{
+    padding: 1em;
+}
+fieldset{
+    position: center;
+
+}
+.pad{
+    padding-left: 1em;
+}
+button.icon{
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button.icon:hover{
+    background-color: purple;
+}
+.buttons{
+    float: none;
+    text-align: center ;
+
+}
+#formPage{
+    padding-left: 35em;
+    padding-right: unset;
+    float: none;
+    text-align: center;
+}
+.check-box{
+    padding: 1em;
+}
+legend{
+    font-size: 3em;
+    font-weight: bold;
+    border: solid purple;
+}
+fieldset{
+    border-style: solid;
+}
+#table{
+    float: unset;
+    padding-top: 10em;
+    padding-left: 15em;
+    text-align: center;
+}
+#thank{
+    float: unset;
+    position: center;
+   padding-left: 30em;
+    text-align: center;
+}
+table{
+    border-collapse: collapse;
+
+}
+td,th{
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 1em;
+}
+
+
+
