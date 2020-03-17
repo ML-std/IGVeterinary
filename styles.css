@@ -1,5 +1,5 @@
 body {
-    background-color: powderblue;
+    background-color: #cac38a;
     position: static;
 }
 hr{
@@ -27,17 +27,12 @@ a:active{
 label{
     font-weight: bolder;
 }
-header{
-    border: aliceblue;
-}
 .tab {
     text-align: center;
     border: blue;
-    position: center;
-    
 }
 .tab button {
-    background-color: yellowgreen;
+    background-color: #598069;
     float: left;
     border: darkblue;
     outline: none;
@@ -55,7 +50,6 @@ header{
     background-color: teal;
 }
 .center{
-    position: center;
     text-align: center;
     font-size: larger;
 
@@ -101,7 +95,6 @@ color: powderblue;
 }
 section.centeredSection{
     image-resolution: from-image;
-    position: center;
 }
 img.clickable{
     width: 10em ;
@@ -121,7 +114,7 @@ figure {
 
 figcaption{
     font-style: oblique;
-    color:palevioletred;
+    color: #274d7f;
     font-size: 1em;
     text-align: center;
 }
@@ -144,7 +137,6 @@ footer{
     background-color: black;
     color: #cccccc;
     position: fixed;
-    float: end;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -154,9 +146,9 @@ footer{
 
 }
 section.right{
-    background-color: powderblue;
     float: right;
-    padding-right: 0.2em;
+    margin-bottom: 5em;
+    padding-right: 18em;
     width: 15em;
 }
 .index{
@@ -179,12 +171,10 @@ br{
     padding-top: 1em;
 }
 form label{
+
     padding: 1em;
 }
-fieldset{
-    position: center;
 
-}
 .pad{
     padding-left: 1em;
 }
@@ -220,16 +210,16 @@ legend{
 }
 fieldset{
     border-style: solid;
+    border-color: violet;
 }
 #table{
     float: unset;
     padding-top: 10em;
-    padding-left: 15em;
+    padding-left: 35em;
     text-align: center;
 }
 #thank{
     float: unset;
-    position: center;
    padding-left: 30em;
     text-align: center;
 }
@@ -242,6 +232,49 @@ td,th{
     text-align: left;
     padding: 1em;
 }
+a.rights{
 
+}
+section.margin-left{
+    padding-left: 100em;
+    float: unset;
+    margin-left: 50em;
+}
+.gray{
+    background-color: lightgray;
+}
+.servicesList{
+    padding-left: 20em;
+    font-weight: bold;
+    font-size: 1.2em;
 
+}
+.fontLarge{
+    background-color: lightgray;
+    text-align: right;
+    font-size: 1.2em;
+}
 
+.centered2{
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+.gallery{
+    padding: unset;
+    margin: unset;
+    width: unset;
+    text-align: center;
+    float: left;
+}

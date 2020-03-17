@@ -10,25 +10,28 @@
 </head>
 <body>
 <header>
+
     <div class="tab">
-        <a href="index.html"> <button class="tablinks" > Main Page </button></a>
-        <a href="blog.html"> <button class="tablinks" > Blog </button></a>
-        <a href="services.html" ><button class="tablinks">Services</button></a>
-        <a href="team.html"  > <button class="tablinks"> Team</button></a>
-        <a href="gallery.html"  ><button class="tablinks" onclick="">Gallery</button></a>
-        <a href="contactme.html" > <button class="tablinks"> Contact Us</button></a>
-        <button class="tablinks"><em>Register</em></button>
+        <form>
+            <button class="tablinks" formaction="index.html" type="submit">Main Page</button>
+            <button class="tablinks" formaction="blog.html" type="submit">Blog </button>
+            <button class="tablinks" formaction="services.html" type="submit">Services</button>
+            <button class="tablinks" formaction="team.html" type="submit"> Team</button>
+            <button class="tablinks" formaction="gallery.html" type="submit">Gallery</button>
+            <button class="tablinks" formaction="contactme.html" type="submit"> Contact Us</button>
+            <button class="tablinks"><em>Register</em></button></form>
     </div>
 </header>
 
 <nav>
 
 
+
     <form action="http://www.google.com/search" method="get">
         <label>Search On Google :</label>
         <input type="hidden" name="q"  value="">
         <label>
-            <input type="text" name="q" placeholder="Search" alt="search">
+            <input type="text" name="q" placeholder="Search">
         </label>
         <input  type="submit" value="Search">
     </form>
@@ -37,31 +40,31 @@
     <fieldset>
         <legend> Register!</legend>
         <label>Name :
-        <input name = "name" placeholder="name">
+        <input name = "name" placeholder="name" required>
         </label>
         <br><br>
         <label> Surname :
-            <input name="surname" placeholder="Surname">
+            <input name="surname" placeholder="Surname" required>
         </label>
         <br><br>
         <label>Nickname :
-            <input name="nickname" placeholder="nickname">
+            <input name="nickname" placeholder="nickname" required>
         </label>
         <br><br>
         <label>Password :
-            <input name="password" placeholder="Password" type="password">
+            <input name="password" placeholder="Password" type="password" required>
         </label>
         <br><br>
         <label>Email :
-            <input name="email" placeholder="email" type="email">
+            <input name="email" placeholder="email" type="email" required>
         </label>
         <br><br>
         <label>Phone Number :
-            <input name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999">
+            <input name = "PhoneNumber" placeholder="11 number Required" type="number" max="99999999999" required>
         </label>
         <br><br>
         <label>Date Of Birth :
-            <input name="Date of Birth" type="date" placeholder="DoB">
+            <input name="Date of Birth" type="date" required>
         </label>
         <br><br>
         <label>Gender</label>
@@ -77,7 +80,7 @@
         <input type="file" id="img" name="img" accept="image/*">
         <br>
         <label >
-            <textarea name="message" placeholder="About You &Your pet" rows="5" cols="75" id="TITLE">
+            <textarea name="message" placeholder="About You & Your pet" rows="5" cols="75" id="TITLE">
 </textarea><br>
         </label>
         <label>What Do You Like ?<br></label>
@@ -104,8 +107,8 @@
         </label>
     </fieldset>
 </form>
-<br>
-<a href="index.html" style="text-align: center; padding-left: 35em;"><button class="icon"><i class="fa fa-home"></i></button></a>
+<br><form>
+<button class="icon" type="submit" formaction="index.html" style="margin-right:60em; " ><i class="fa fa-home"></i></button></form>
 
 
 

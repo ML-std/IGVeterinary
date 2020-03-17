@@ -10,25 +10,28 @@
 </head>
 <body>
 <header>
+
     <div class="tab">
-        <a href="index.html"> <button class="tablinks" > Main Page </button></a>
-        <a href="blog.html"> <button class="tablinks" > Blog </button></a>
-        <a href="services.html" ><button class="tablinks">Services</button></a>
-        <a href="team.html"  > <button class="tablinks"> Team</button></a>
-        <a href="gallery.html"  ><button class="tablinks" onclick="">Gallery</button></a>
-         <button class="tablinks"> <em>Contact Us</em></button>
-        <a href="registration.html"><button class="tablinks"> Register</button></a>
+        <form>
+            <button class="tablinks" formaction="index.html" type="submit"> Main Page</button>
+            <button class="tablinks" formaction="blog.html" type="submit">Blog </button>
+            <button class="tablinks" formaction="services.html" type="submit">Services</button>
+            <button class="tablinks" formaction="team.html" type="submit"> Team</button>
+            <button class="tablinks" formaction="gallery.html" type="submit">Gallery</button>
+            <button class="tablinks" ><em>Contact Us</em></button>
+            <button class="tablinks" formaction="registration.html" type="submit"> Register</button></form>
     </div>
 </header>
 
 <nav>
 
 
+
     <form action="http://www.google.com/search" method="get">
         <label>Search On Google :</label>
         <input type="hidden" name="q"  value="">
         <label>
-            <input type="text" name="q" placeholder="Search" alt="search">
+            <input type="text" name="q" placeholder="Search">
         </label>
         <input  type="submit" value="Search">
     </form>
@@ -38,19 +41,19 @@
             <fieldset>
                 <legend>Contact Us!</legend>
     <label>
-        <input name = "name" placeholder="name">
+        <input name = "name" placeholder="name" required>
     </label>
         <br><br>
     <label>
-        <input name="surname" placeholder="Surname">
+        <input name="surname" placeholder="Surname" required>
     </label>
         <br><br>
     <label>
-        <input name="email" placeholder="email" type="email">
+        <input name="email" placeholder="email" type="email" required>
     </label>
         <br><br>
     <label>
-        <input name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999">
+        <input name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999" required>
     </label>
         <br><br>
         <label>
@@ -85,11 +88,12 @@
     <h3>You can click this link below to mail Us!</h3><br>
     <a href="mailto:igcompany@gmail.com" style="color: darkred;font-size: larger;" >Ig Company</a>
     <br><br>
-    <a href="index.html"><button class="icon"><i class="fa fa-home"></i></button></a>
+    <form style="text-align: center">
+    <button class="icon" type="submit" formaction="index.html"><i class="fa fa-home"></i></button>
     <br><br>
-    <a href="https://www.facebook.com"><button class="icon"><i class="fa fa-facebook"></i></button></a>
-    <a href="https://twitter.com"><button class="icon"><i class="fa fa-twitter"></i></button></a>
-    <a href="https://www.instagram.com"><button class="icon"><i class="fa fa-instagram"></i></button></a>
+    <button class="icon" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
+    <button class="icon" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
+    <button class="icon" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>
 <br>
 </section>
 
