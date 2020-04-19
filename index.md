@@ -37,7 +37,7 @@
     <img class =" index" src="../Media/injuredGood.png" alt = "IG Logo">
     <img  class = "index" src="../Media/vet2.png" alt="Veterinary">
     <section class="right">
-        <form class="fontLarge" action="index.html">
+        <form class="fontLarge" action="index.md">
         <div class="center">
             <h4>IG Veterinary Clinic</h4>
             <h5>Please Login</h5>
