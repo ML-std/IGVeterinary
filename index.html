@@ -2,43 +2,57 @@
 <html lang="en">
 <head>
     <title>Main Page</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Styles/navbar.css">
     <link rel="shortcut icon" href="Media/favicon.ico" />
 </head>
 <body>
 <header>
+    <img src="Media/injuredGood.png" class="img-thumbnail" alt="IG Picture" id="IG_picture" >
+    <form action="http://www.google.com/search" class="form-inline"   method="get">
+        <div>
+            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..."></label>
 
-    <div class="tab">
-        <form>
-            <button class="tablinks" ><em> Main Page</em></button>
-            <button class="tablinks" formaction="Html Files/blog.html" type="submit"> Blog </button>
-            <button class="tablinks" formaction="Html Files/services.html" type="submit">Services</button>
-            <button class="tablinks" formaction="Html Files/team.html" type="submit"> Team</button>
-            <button class="tablinks" formaction="Html Files/gallery.html" type="submit">Gallery</button>
-            <button class="tablinks" formaction="Html Files/contactme.html" type="submit"> Contact Us</button>
-            <button class="tablinks" formaction="Html Files/registration.html" type="submit"> Register</button></form>
-    </div>
-      </header>
-<nav>
-
-
-    <form action="http://www.google.com/search" method="get">
-        <label>Search On Google :</label>
-        <input type="hidden" name="q"  value="">
-        <label>
-            <input type="text" name="q" placeholder="Search">
-        </label>
-         <input  type="submit" value="Search">
+        </div>
+        <button type="submit" value="Search" class="btn btn-primary">Search</button>
     </form>
-</nav>
-<hr>
-<aside>
-    <img class = "index" src="Media/veterinary.png" alt="Veterinary">
-    <img class =" index" src="Media/injuredGood.png" alt = "IG Logo">
-    <img class = "index" src="Media/vet2.png" alt="Veterinary">
-    <section class="right">
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid ">
+        <a class="navbar-brand" href="index.html"><img src="Media/favicon.ico" alt = "logo" style="width: 40px;" ></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav ">
+            <li>
+                <a class="nav-link active " href="index.html">IG VETERINARY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/contactme.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Html%20Files/registration.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+      </header>
+        <aside class="col-md-4">
         <form class="fontLarge" action="index.html">
-        <div class="center">
             <h4>IG Veterinary Clinic</h4>
             <h5>Please Login</h5>
             <label><input name="username" placeholder="UserName">
@@ -47,19 +61,27 @@
             <label><input name="password" type="password" maxlength="8" placeholder="password"/></label>
             <hr class="another">
            <input type="submit" value="Login">
+            <input type="submit" formaction="Html%20Files/registration.html" value="Register!">
+       </form>
+        </aside>
 
-        </div></form>
-        <form action="Html%20Files/registration.html" class="center">
-            <input type="submit" value="Register!">
-        </form>
-    </section>
-</aside>
 <article>
     <h4 class="center">Should you need any information,please <a href="Html%20Files/contactme.html">contact Us!</a></h4>
+
+
 </article>
 
-<footer>
-    &copy; 2020 all rights reserved IG Company
+
+<!-- Footer -->
+<footer class="page-footer font-small red">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© All Rights Reserved IG COMPANY
+    </div>
+
+
 </footer>
+<!-- Footer -->
+
 </body>
 </html>

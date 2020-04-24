@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Contact Us!</title>
-    <link rel="stylesheet" href="../Styles/styles.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Styles/navbar.css">
     <link rel="shortcut icon" href="../Media/favicon.ico" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 <header>
+    <img src="../Media/injuredGood.png" class="img-thumbnail" alt="IG Picture" id="IG_picture" >
+    <form action="http://www.google.com/search" class="form-inline"   method="get">
+        <div>
+            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..."></label>
 
-    <div class="tab">
-        <form>
-            <button class="tablinks" formaction="index.html" type="submit"> Main Page</button>
-            <button class="tablinks" formaction="blog.html" type="submit">Blog </button>
-            <button class="tablinks" formaction="services.html" type="submit">Services</button>
-            <button class="tablinks" formaction="team.html" type="submit"> Team</button>
-            <button class="tablinks" formaction="gallery.html" type="submit">Gallery</button>
-            <button class="tablinks" ><em>Contact Us</em></button>
-            <button class="tablinks" formaction="registration.html" type="submit"> Register</button></form>
-    </div>
-</header>
-
-<nav>
-
-
-
-    <form action="http://www.google.com/search" method="get">
-        <label>Search On Google :</label>
-        <input type="hidden" name="q"  value="">
-        <label>
-            <input type="text" name="q" placeholder="Search">
-        </label>
-        <input  type="submit" value="Search">
+        </div>
+        <button type="submit" value="Search" class="btn btn-primary">Search</button>
     </form>
-</nav>
+
+    <nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid ">
+        <a class="navbar-brand" href="../index.html"><img src="../Media/favicon.ico" alt = "logo" style="width: 40px;" ></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav ">
+            <li>
+                <a class="nav-link  " href="../index.html">IG VETERINARY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="contactme.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+</header>
 
         <form class="form" target="_self" action="response.html">
             <fieldset>

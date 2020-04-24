@@ -1,0 +1,56 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-image: url("../Media/grayWood.jpg");
+}
+*{
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url("../Media/headerbackground.jpg");
+
+}
+header img {}
+input{
+    width: 100%;
+}
+header form{
+    display: inline-block;
+    float: left;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+#IG_picture{
+float: left;
+    margin: 2%;;
+    padding: 2%;
+    width: 20%;
+    background-color:gray;
+}
+@media (max-width: 576px ) {
+    header form{
+        margin-left: 10%;
+    }
+    header form button{
+        margin-top: -0.4em;
+    ;
+    }
+    header nav img{
+        display: none;
+    }
+    header nav ul{
+        margin-right:18em;
+        float: left;
+    }
+}
