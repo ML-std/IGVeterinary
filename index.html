@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Main Page</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="Styles/navbar.css">
-    <link rel="shortcut icon" href="Media/favicon.ico" />
-</head>
-<body>
-<header>
-    <img src="Media/injuredGood.png" class="img-thumbnail" alt="IG Picture" id="IG_picture" >
-    <form action="http://www.google.com/search" class="form-inline"   method="get">
+    <html lang="en">
+    <head>
+        <title>Main Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Styles/header-footer.css">
+        <link rel="stylesheet" href="Styles/styles.css">
+        <link rel="shortcut icon" href="Media/favicon.ico" />
+    </head>
+    <body>
+    <header>
+   <img src="Media/injuredGood.png" class="rounded" alt="IG Picture" id="IG_picture" >
+    <form action="http://www.google.com/search" class="form-inline "   method="get">
         <div>
-            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..."></label>
+            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..." ></label>
 
         </div>
         <button type="submit" value="Search" class="btn btn-primary">Search</button>
     </form>
 
-    <nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid ">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark container-fluid ">
         <a class="navbar-brand" href="index.html"><img src="Media/favicon.ico" alt = "logo" style="width: 40px;" ></a>
 
         <!-- Links -->
@@ -51,37 +53,42 @@
         </ul>
     </nav>
       </header>
-        <aside class="col-md-4">
-        <form class="fontLarge" action="index.html">
+    <aside class=" col-sm-6">
+        <form class="form-group" action="index.html">
             <h4>IG Veterinary Clinic</h4>
             <h5>Please Login</h5>
-            <label><input name="username" placeholder="UserName">
+            <label><input name="username" class="form-control" placeholder="UserName">
+
             </label>
-            <br><br>
-            <label><input name="password" type="password" maxlength="8" placeholder="password"/></label>
-            <hr class="another">
-           <input type="submit" value="Login">
-            <input type="submit" formaction="Html%20Files/registration.html" value="Register!">
+            <label><input name="password" class="form-control" type="password" maxlength="8" placeholder="password"/></label>
+            <button type="submit" class="form-control" value="Login">Login</button>
+            <button type="submit" class="form-control" formaction="Html%20Files/registration.html" value="Register!">Register!</button>
        </form>
-        </aside>
+    </aside>
+    <section>
+        <img src="Media/vetServices.png" alt="photo">
+    </section>
 
 <article>
-    <h4 class="center">Should you need any information,please <a href="Html%20Files/contactme.html">contact Us!</a></h4>
+
 
 
 </article>
+    <!-- Footer -->
+    <footer class="page-footer font-small indigo">
 
+        <form style="text-align: center">
+            <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-pinterest"></i></button>
+            <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
+            <button class="btn btn-primary btn-lg" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
+            <button class="btn btn-primary btn-lg" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>
 
-<!-- Footer -->
-<footer class="page-footer font-small red">
+        <div class="footer-copyright text-center py-3 ">
+            All Rights Reserved &copy; IG Company
+        </div>
+        <!-- Copyright -->
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© All Rights Reserved IG COMPANY
-    </div>
-
-
-</footer>
-<!-- Footer -->
-
+    </footer>
+    <!-- Footer -->
 </body>
 </html>

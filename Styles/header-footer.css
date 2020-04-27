@@ -8,12 +8,7 @@ html, body{
 }
 
 header{
-    background-image: url("../Media/headerbackground.jpg");
-
-}
-header img {}
-input{
-    width: 100%;
+    background-image: url("../Media/golden-wood.jpg");
 }
 header form{
     display: inline-block;
@@ -25,19 +20,28 @@ footer {
     position: relative;
     left: 0;
     bottom: 0;
+    margin-top: 4em;
+    padding: 2em;
     width: 100%;
-    background-color: red;
+    background-color: gray;
     color: white;
-    text-align: center;
+}
+
+
+ header nav form ul li:hover{
+   background-color: #72706d;
 }
 
 #IG_picture{
 float: left;
     margin: 2%;;
     padding: 2%;
-    width: 20%;
-    background-color:gray;
+    width: 15%;
 }
+#IG_picture:hover{
+    width: 30%;
+}
+
 @media (max-width: 576px ) {
     header form{
         margin-left: 10%;
@@ -46,11 +50,19 @@ float: left;
         margin-top: -0.4em;
     ;
     }
+    #IG_picture{
+        width: 20%;
+    }
     header nav img{
         display: none;
     }
-    header nav ul{
+    header nav ul,li{
         margin-right:18em;
-        float: left;
+        width: 100%;
     }
+
+
+}
+ul, li{
+    text-align: center;
 }
