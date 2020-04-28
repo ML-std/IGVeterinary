@@ -8,6 +8,7 @@ html, body{
 }
 
 header{
+    margin-top: -1em;
     background-image: url("../Media/golden-wood.jpg");
 }
 header form{
@@ -26,7 +27,11 @@ footer {
     background-color: gray;
     color: white;
 }
-
+#covidInfo{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
  header nav form ul li:hover{
    background-color: #72706d;
