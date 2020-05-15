@@ -5,16 +5,23 @@
     <title>Work Hours</title>
     <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="shortcut icon" href="../Media/favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../Styles/header-footer.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="alert alert-danger alert-dismissible fade show text-center" id="covidInfo">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    Covid-19 changed everything. We are now introducing pet cargo system! <a href="cargopet.html" class="alert-link">Click here to get more information!</a>
-</div>
-<h1 style="text-align: center">Thank You For Contacting Us! We will respond  as soon as possible.</h1>
-<section id="table"><h2 style="text-align: center">Also You can come to our office at these hours :</h2>
-    <table>
+<main id="response_div">
+    <div class="alert alert-danger alert-dismissible fade show text-center" id="covidInfo">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        Covid-19 changed everything. We are now introducing pet cargo system! <a href="cargopet.html" class="alert-link">Click here to get more information!</a>
+    </div>
+    <h1 style="margin-top: 0.5em">Thank You For Contacting Us! We will respond  as soon as possible.</h1>
+    <h2 style="margin: 1em">Also You can come to our office at these hours :</h2>
+    <table class="container col-sm-6 table table-dark table-striped " >
     <tr>
         <th>Sunday</th>
         <th>Monday</th>
@@ -44,11 +51,11 @@
         <td>13:30-18:00</td>
     </tr>
 </table>
-    <br><form>
-    <button class="icon" type="submit" formaction="index.html" style="margin-right: 23em;"><i class="fa fa-home"></i>Home</button></form>
-</section>
+    <br><form class="container">
+    <button  class="btn btn-primary " type="submit" formaction="../index.html"><i class="fa fa-home"></i>Home</button></form>
+</main>
 <!-- Footer -->
-<footer class="page-footer font-small indigo">
+<footer class="page-footer font-small sticky">
 
     <form style="text-align: center">
         <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-pinterest"></i></button>

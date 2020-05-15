@@ -1,6 +1,40 @@
-aside {
-    float: right;
+main{
+    color: lightgray;
+    text-align: center;
+    margin-bottom: 20em;
+}
+
+#gifs{
+  margin: 5em 5em 10em 5em;
+    display: block;
+}
+
+#gifs img{
+    height: 14em;width:20em
 }
 section{
-    width: 50%;
+padding-top: 5em;
+    margin-bottom: 3em;
+}
+.images{
+   padding-left: 1.2em;
+}
+aside form label{
+    display: block;
+}
+figure{
+    width: 15%;
+    display: inline-block;
+    margin: 1.16em;
+    text-align: center;
+    padding: 1em;
+
+}
+.clickable{
+    width: 10em ;
+    height: 10em ;
+    padding-right : 5em ;
+}
+.blog{
+    font-size: 1.1em;
 }
