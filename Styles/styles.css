@@ -22,19 +22,18 @@ padding-top: 5em;
 aside form label{
     display: block;
 }
-figure{
-    width: 15%;
-    display: inline-block;
-    margin: 1.16em;
-    text-align: center;
-    padding: 1em;
 
-}
-.clickable{
-    width: 15em ;
-    height: 15em ;
-    padding-right : 5em ;
-}
 .blog{
     font-size: 1.1em;
+}
+.card{
+    background-color: gold;
+}
+.cards{
+    margin-bottom: 1em;
+}
+.card-img-top{
+    margin-left: 0.5em;
+    width: 10em;
+    height: 10em;
 }
