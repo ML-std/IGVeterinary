@@ -1,17 +1,11 @@
 main{
     color: lightgray;
     text-align: center;
-    margin-bottom: 20em;
+    margin-bottom: 25em;
 }
 
-#gifs{
-  margin: 5em 5em 10em 5em;
-    display: block;
-}
 
-#gifs img{
-    height: 14em;width:20em
-}
+
 section{
 padding-top: 5em;
     margin-bottom: 3em;
@@ -22,7 +16,6 @@ padding-top: 5em;
 aside form label{
     display: block;
 }
-
 .blog{
     font-size: 1.1em;
 }
@@ -33,7 +26,5 @@ aside form label{
     margin-bottom: 1em;
 }
 .card-img-top{
-    margin-left: 0.5em;
-    width: 10em;
-    height: 10em;
+    height: 60%;
 }
