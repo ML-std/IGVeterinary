@@ -10,6 +10,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/header-footer.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="shortcut icon" href="../Media/favicon.ico" />
 
 </head>
@@ -58,87 +59,114 @@
         </ul>
     </nav>
 </header>
-<form class="form" target="_self" action="thanks.html">
-    <fieldset>
-        <legend> Register!</legend>
-        <label>Name :
-        <input name = "name" placeholder="name" required>
-        </label>
-        <br><br>
-        <label> Surname :
-            <input name="surname" placeholder="Surname" required>
-        </label>
-        <br><br>
-        <label>Nickname :
-            <input name="nickname" placeholder="nickname" required>
-        </label>
-        <br><br>
-        <label>Password :
-            <input name="password" placeholder="Password" type="password" required>
-        </label>
-        <br><br>
-        <label>Email :
-            <input name="email" placeholder="email" type="email" required>
-        </label>
-        <br><br>
-        <label>Phone Number :
-            <input name = "PhoneNumber" placeholder="11 number Required" type="number" max="99999999999" required>
-        </label>
-        <br><br>
-        <label>Date Of Birth :
-            <input name="Date of Birth" type="date" required>
-        </label>
-        <br><br>
-        <label>Gender</label>
-        <br>
-        <br>
-        <div class="pad">
-            <input type="radio" name="gender" value="Male" id="male">
-            <label for = "male">Male</label><br>
-            <input type="radio" name="gender" value="Female" id="Female">
-            <label for = "Female">Female</label><br>
-           </div>
-        <label for="img">Select Your image:</label>
-        <input type="file" id="img" name="img" accept="image/*">
-        <br>
-        <label >
-            <textarea name="message" placeholder="About You & Your pet" rows="5" cols="75" id="TITLE">
-</textarea><br>
-        </label>
-        <label>What Do You Like ?<br></label>
-            <input type="checkbox" value="movies" name="Movies" id="movies">
-            <label class="check-box" for="movies">Movies</label>
-            <input type="checkbox" value="dogs" name="Dogs" id="Dogs">
-            <label class="check-box" for="Dogs">Dogs</label>
-            <input type="checkbox" name="cats" id="Cats">
-            <label class="check-box" for="Cats">Cats</label>
-            <input type="checkbox" name="animals" id="animals">
-            <label class="check-box" for="animals">All of Animals</label>
-            <br><br>
-            <input type="checkbox" name="creature" id="creature">
-            <label class="check-box" for="creature">All of Creatures</label>
-            <input  type="checkbox" name="nature" id="nature">
-            <label class="check-box" for="nature">Nature</label>
-            <input type="checkbox" name="work" id="work">
-            <label class="check-box" for="work">Work</label><br><br><br><br>
-        <label>
-            <input type="submit" value="submit" >
-        </label>
-        <label>
-            <input type="reset" value="reset">
-        </label>
-    </fieldset>
+<main class="row container-fluid" >
+    <section class="col-sm-4"></section>
+    <form class="col-sm-4 " onsubmit="return formValidate()" target="_self" action="thanks.html">
+
+        <legend class="text-center"> Register!</legend>
+        <div class="form-group">
+        <label for="name">Name :</label>
+        <input id="name" class="form-control" name = "name" placeholder="name" onchange="nameOnChange()">
+        </div>
+        <div class="form-group">
+            <label for="surname">Surname :</label>
+            <input id="surname" class="form-control" name="surname" placeholder="Surname" onchange="surnameOnChange()" >
+        </div>
+        <div class="form-group">
+            <label for="nickname">Nickname :</label>
+            <input id="nickname" class="form-control" name="nickname" placeholder="nickname" onchange="nicknameOnChange()" >
+        </div>
+        <div class="form-group">
+            <label for="password">Password :</label>
+            <input id="password" class="form-control" name="password" placeholder="Password" type="password" onchange="passwordOnChange()" >
+        </div>
+        <div class="form-group">
+            <label for="email">Email :</label>
+            <input id="email" class="form-control" name="email" placeholder="email" onchange="emailOnChange()" >
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone Number :</label>
+            <input id="phoneNumber" class="form-control" placeholder="01234567891 (11 number)" onchange="phoneNumberOnChange()" >
+        </div>
+        <div class="form-group">
+            <label for="DOB">Date Of Birth :</label>
+            <input id="DOB" class="form-control" name="Date of Birth" placeholder="DD-MM-YYYY" onchange="dateOnChange()">
+        </div>
+
+
+        <div class="form-group">
+            <label>Gender</label>
+            <div class="form-check ">
+                <label class="form-check-label">
+                    <input type="radio"  class="form-check-input" value="male" name="gender">MALE
+                </label>
+            </div></div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" value="female" name="gender">FEMALE
+                </label>
+            </div>
+        <div class="form-group">
+            <label for="file">Select Your image :</label>
+            <input type="file" class="form-control-file" id="file"  accept="image/*">
+        </div>
+        <div class="form-group">
+        <label for = "message" > </label>
+            <textarea class="form-control" id = "message" name="message" placeholder="About You & Your pet" rows="7"  >
+
+            </textarea>
+        </div>
+        <div class="form-group">
+            <label>What Do You Like?</label><br>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check1">
+                    <input type="checkbox" class="form-check-input" id="check1" name="Movies" value="Movies">Movies
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check2">
+                    <input type="checkbox" class="form-check-input" id="check2" name="Dogs" value="Dogs">Dogs
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check3">
+                    <input type="checkbox" class="form-check-input" id="check3" name="Cats" value="Cats">Cats
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check4">
+                    <input type="checkbox" class="form-check-input" id="check4" name="Animals" value="Animals">All Of Animals
+                </label>
+            </div><br>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check5">
+                    <input type="checkbox" class="form-check-input" id="check5" name="Creatures" value="Creatures">All Of Creatures
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check6" >
+                    <input type="checkbox" class="form-check-input" id="check6" name="Nature" value="Nature">Nature
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label" for="check7">
+                    <input type="checkbox" class="form-check-input" id="check7" name="Work" value="Work">Work
+                </label>
+            </div>
+        </div>
+            <div class="form-group">
+                <label>
+                    <input  class=" btn btn-primary text-center form-control" type="submit" value="Submit" >
+                    <input  class="btn btn-danger text-center form-control " type="reset" value="Reset"></label>
+            </div>
+
 </form>
-<br><form>
-<button class="icon" type="submit" formaction="index.html" style="margin-right:60em; " ><i class="fa fa-home"></i></button></form>
-
-
-
+</main>
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
 
     <form style="text-align: center">
-        <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-pinterest"></i></button>
+        <button class="btn btn-primary btn-lg" formaction="https://www.pinterest.com" type="submit"><i class="fa fa-pinterest"></i></button>
         <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
         <button class="btn btn-primary btn-lg" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
         <button class="btn btn-primary btn-lg" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>
@@ -149,6 +177,120 @@
     <!-- Copyright -->
 
 </footer>
+<script>
+    function nameOnChange() {
+    let nameText = document.getElementById('name');
+
+    if (!(nameText.value.trim().match(/^[a-zA-Z ]*$/gi))){
+        alert("no numbers or symbols on the name");
+                return false;
+
+    }
+    else return true;
+    }
+    function surnameOnChange() {
+        let nameText = document.getElementById('surname');
+
+        if (!(nameText.value.trim().match(/^[a-zA-Z ]*$/gi))){
+            alert("no numbers or symbols on the surname");
+            return false;
+
+        }
+        else return true;
+    }
+    function nicknameOnChange() {
+        let  nickname = document.getElementById('nickname');
+        if ((nickname.value.trim().length>16 || nickname.value.trim().length<8)){
+            alert("length of nickname should be between 8 and 16");
+            return false;
+        }
+        else if(!(nickname.value.trim().match(/^[0-9a-zA-Z]*$/gi))){
+            alert("no whitespace or special characters allowed.");
+            return false
+        }
+        else return true;
+    }
+    function passwordOnChange() {
+        let password = document.getElementById('password');
+     if(password.length<8 || password.length>16){
+            alert('Length of password should be between 8 and 16.');
+            return false;
+        }
+        else if(password.value.trim().match(/[A-Z]/g) == null){
+            alert('Password should contain at least one uppercase letter.');
+            return false;
+        }
+        else if(password.value.trim().match(/[0-9]/g) == null){
+            alert('Password should contain at least one digit.');
+            return false;
+        }
+        else if(password.value.trim().match(/\W|_/g) == null){
+            alert('Password should contain at least one special character.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function emailOnChange() {
+        let email = document.getElementById('email');
+        let validator = email.value.trim();
+        let format =  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        if(validator.match(format) == null){
+            alert('invalid Email style.');
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    function phoneNumberOnChange() {
+        let phoneNumber = document.getElementById('phoneNumber');
+       if (phoneNumber.value.trim().match( /^\d{11}$/)){
+           return true;
+       }
+       else{ alert('Invalid phone Number.');
+        return false
+       }
+    }
+    function dateOnChange() {
+        let DOB = document.getElementById('DOB');
+        let strings =DOB.value.trim().split('-');
+        let format = /^([0-2][0-9]|(3)[0-1])(-)(((0)[0-9])|((1)[0-2]))(-)\d{4}$/i;
+        if(DOB.value.trim().match(format) == null){
+            alert('Invalid input of Date of Birth.');
+            return false;
+        }
+        else if((Number(strings[2])<1920) || (Number(strings[2])>2002)){
+            alert('Invalid Date Of Birth.');
+            return false;
+        }
+
+
+    }
+
+    function isFilled(input) {
+        let validator = input.trim();
+        return validator !== "";
+    }
+    function formValidate(){
+        let nameText = document.getElementById('name');
+        let surnameText = document.getElementById('surname');
+        let nicknameText = document.getElementById('nickname');
+        let passwordText = document.getElementById('password');
+        let emailText = document.getElementById('email');
+        let phoneNumberText = document.getElementById('phoneNumber');
+        let dateText = document.getElementById('DOB');
+        if (!(isFilled(nameText.value) && isFilled(surnameText.value) && isFilled(nicknameText.value) && isFilled(passwordText.value)
+            && isFilled(emailText.value) && isFilled(phoneNumberText.value) && isFilled(dateText.value))) {
+            alert("please fill the blanks");
+            return false;
+        } else {
+            alert("Well Done!");
+            return true;
+        }
+    }
+</script>
 <!-- Footer -->
 </body>
 </html>

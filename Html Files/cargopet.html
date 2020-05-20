@@ -1,10 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Pet Cargo</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../Styles/header-footer.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="shortcut icon" href="../Media/favicon.ico" />
 </head>
 <body>
+<header>
+    <img src="../Media/injuredGood.png" class="rounded" alt="IG Picture" id="IG_picture" >
+    <form action="http://www.google.com/search" class="form-inline"   method="get">
+        <div>
+            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..."></label>
 
+        </div>
+        <button type="submit" value="Search" class="btn btn-primary">Search</button>
+    </form>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark container-fluid ">
+        <a class="navbar-brand" href="../index.html"><img src="../Media/favicon.ico" alt = "logo" style="width: 40px;" ></a>
+
+        <!-- Links -->
+        <ul class="navbar-nav ">
+            <li>
+                <a class="nav-link" href="../index.html">IG VETERINARY</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registration.html">Register</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="row container-fluid">
+    <section class="col-sm-8">
+
+            <form class=" col-sm-12 " target="_self" action="response.html">
+
+                <legend class="text-center">Cargo Your Pet</legend>
+                <div class="form-group">
+                    <label for = "name"></label>
+                    <input  class="form-control " id="name" name = "name" placeholder="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname">  </label>
+                    <input class="form-control" id="surname" name="surname" placeholder="Surname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"> </label>
+                    <input class="form-control" id="email" name="email" placeholder="email" type="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="PhoneNumber" > </label>
+                    <input class="form-control" id="PhoneNumber" name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Select a valid date so we can get your pet : </label>
+                    <input name="date" type="date" id="date" class="form-control" placeholder="select a date">
+                </div>
+
+                <div class="form-group">
+                    <label for="Message" > </label>
+                    <textarea id="Message" class="form-control" rows="7" name="message" placeholder="Please ask questions if you have any" >
+</textarea>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input class=" btn btn-primary text-center form-control" type="submit" value="submit" >
+                    </label>
+                </div>
+
+            </form>
+
+
+    </section>
+    <aside class="col-sm-4">
+    <h1 class="text-center">FAQ</h1>
+        <em>This system is fairly new, so your recommendations is very important to us, please ask if you have any questions. </em>
+        <p><b>1)</b>    In which circumstances my pet will go to the Clinic?</p>
+        <p><b>Answer</b>    Well, we have full-automated with air conditioner transports.So, they will be comfortable.</p>
+        <p><b>2)</b>   Why should I send you?</p>
+        <p><b>Answer</b>    At this circumstances, it is better to cargo your pet to us since the Covid-19 is very infectious.</p>
+        <p><b>3)</b> How can I track My Pet ?  </p>
+        <p><b>Answer</b> From PlayStore, we will have an application to track your beloved pets. </p>
+        <form action="cargopet.html" onsubmit="query()">
+            <div class="form-group">
+                <label for="question" > </label>
+                <textarea id="question" class="form-control" rows="7" name="message" placeholder="Ask Questions or recommendations Anonymously." >
+</textarea>
+            </div>
+            <div class="form-group">
+                <label>
+                    <input class=" btn btn-primary text-center form-control" type="submit" value="submit" >
+                </label>
+            </div>
+        </form>
+    </aside>
+</main>
+
+<footer class="page-footer font-small indigo">
+
+    <form style="text-align: center">
+        <button class="btn btn-primary btn-lg" formaction="https://www.pinterest.com" type="submit"><i class="fa fa-pinterest"></i></button>
+        <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
+        <button class="btn btn-primary btn-lg" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
+        <button class="btn btn-primary btn-lg" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>
+
+    <div class="footer-copyright text-center py-3 ">
+        All Rights Reserved &copy; IG Company
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<script>
+    function query() {
+    alert("Thank you, your question / Recommendation added");
+    return true;
+    }
+
+</script>
 </body>
 </html>

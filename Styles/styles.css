@@ -1,7 +1,6 @@
 main{
     color: lightgray;
-    text-align: center;
-    margin-bottom: 25em;
+    margin-bottom: 15em;
 }
 
 
@@ -19,9 +18,7 @@ aside form label{
 .blog{
     font-size: 1.1em;
 }
-.card{
-    background-color: gold;
-}
+
 .cards{
     margin-bottom: 1em;
 }

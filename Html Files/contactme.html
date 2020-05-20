@@ -11,6 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../Styles/header-footer.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="shortcut icon" href="../Media/favicon.ico" />
 
 </head>
@@ -23,7 +24,7 @@
     <img src="../Media/injuredGood.png" class="rounded" alt="IG Picture" id="IG_picture" >
     <form action="http://www.google.com/search" class="form-inline"   method="get">
         <div>
-            <label><input type="text" name="q" class="form-control" placeholder="Search on Google..."></label>
+            <label for = "search"></label><input id="search" type="text" name="q" class="form-control" placeholder="Search on Google...">
 
         </div>
         <button type="submit" value="Search" class="btn btn-primary">Search</button>
@@ -59,67 +60,71 @@
     </nav>
 </header>
 
-        <form class="form" target="_self" action="response.html">
-            <fieldset>
-                <legend>Contact Us!</legend>
-    <label>
-        <input name = "name" placeholder="name" required>
-    </label>
-        <br><br>
-    <label>
-        <input name="surname" placeholder="Surname" required>
-    </label>
-        <br><br>
-    <label>
-        <input name="email" placeholder="email" type="email" required>
-    </label>
-        <br><br>
-    <label>
-        <input name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999" required>
-    </label>
-        <br><br>
-        <label>
-            <input name="Problem" placeholder="Problem">
-        </label>
-        <br><br>
+<main class="row container-fluid">
+        <section class="col-sm-4"></section>
+        <form class=" col-sm-4 " target="_self" action="response.html">
+
+                <legend class="text-center">Contact Us!</legend>
+                <div class="form-group">
+    <label for = "name"></label>
+        <input  class="form-control " id="name" name = "name" placeholder="name" required>
+    </div>
+
+                <div class="form-group">
+    <label for="surname">  </label>
+        <input class="form-control" id="surname" name="surname" placeholder="Surname" required>
+  </div>
+                        <div class="form-group">
+    <label for="email"> </label>
+        <input class="form-control" id="email" name="email" placeholder="email" type="email" required>
+   </div>
+
+                <div class="form-group">
+    <label for="PhoneNumber" > </label>
+        <input class="form-control" id="PhoneNumber" name = "PhoneNumber" placeholder="Phone Number(11 number Required!)" type="number" max="99999999999" required>
+    </div>
+      <div class="form-group">
+        <label for="Problem"> </label>
+            <input name="Problem" id="Problem" class="form-control" placeholder="Problem">
+       </div>
+
+                <div class="form-group">
                 <label>What Kind Of Animal has issue? </label>
-                <br>
-                <br>
-                <div class="pad">
-                <input type="radio" name="Animal" value="Dog" id="Dog">
-                <label for = "Dog">Dog</label><br>
-                <input type="radio" name="Animal" value="cat" id="Cat">
-                <label for = "Cat">Cat</label><br>
-                <input type="radio" name="Animal" value="Bird" id="Bird">
-                <label for = "Bird">Bird</label><br>
-                <input type="radio" name="Animal" value="other" id="Other">
-                <label for = "Other">Other</label><br></div>
-        <label >
-            <textarea name="message" placeholder="Message" rows="5" cols="75" id="TITLE">
+                    <div class="form-check ">
+                        <label class="form-check-label">
+                            <input type="radio"  class="form-check-input" value="dog" name="issue">DOG
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="cat" name="issue">CAT
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="bird" name="issue">BIRD
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                            <input type="radio" class="form-check-input" value="other" name="issue">OTHER
+                        </label>
+                    </div>
+     </div>
+                <div class="form-group">
+        <label for="Message" > </label>
+            <textarea id="Message" class="form-control" rows="7" name="message" placeholder="Message" >
 </textarea>
-        </label>
+       </div>
+                    <div class="form-group">
                 <label>
-                    <input type="submit" value="submit" >
+                    <input class=" btn btn-primary text-center form-control" type="submit" value="submit" >
                 </label>
-            </fieldset>
+                    </div>
+
         </form>
-<br>
 
-<section id ="formPage">
-    <h2>OR</h2>
-    <h3>You can click this link below to mail Us!</h3><br>
-    <a href="mailto:igcompany@gmail.com" style="color: darkred;font-size: larger;" >Ig Company</a>
-    <br><br>
-    <form style="text-align: center">
-    <button class="icon" type="submit" formaction="index.html"><i class="fa fa-home"></i></button>
-    <br><br>
-    <button class="icon" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
-    <button class="icon" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
-    <button class="icon" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>
-<br>
-</section>
-
-
+</main>
 <!-- Footer -->
 <footer class="page-footer font-small indigo">
 
