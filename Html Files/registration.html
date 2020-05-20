@@ -211,7 +211,7 @@
     }
     function passwordOnChange() {
         let password = document.getElementById('password');
-     if(password.length<8 || password.length>16){
+     if(password.value.length<8 || password.value.length>16){
             alert('Length of password should be between 8 and 16.');
             return false;
         }
