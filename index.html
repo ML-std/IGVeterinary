@@ -57,25 +57,27 @@
         </ul>
     </nav>
       </header>
-    <main>
-    <section>
-        <aside class=" col-sm-6 float-right text-center">
+    <main class="row container">
+    <section class= "col-sm-8">
+
+        <div class="images">
+            <img src="Media/vetServices.png" class="rounded images" alt="photo">
+            <img src="Media/main.jpg" class="rounded images" alt="photo">
+        </div>
+    </section>
+        <section class=" col-sm-4 float-right text-center">
             <form class="form-group" action="index.html">
                 <h4>IG Veterinary Clinic</h4>
                 <h5>Please Login</h5>
-                <label><input name="username" class="form-control" placeholder="Username">
-                </label>
-                <label><input name="password" class="form-control" type="password" maxlength="8" placeholder="password"/></label>
-                <button type="submit" class=" btn btn-primary btn-lg  " value="Login">Login</button>
-                <button type="submit" class=" btn btn-primary btn-lg " formaction="Html%20Files/registration.html" value="Register!">Register!</button>
+                <label for = "username"></label>
+                    <input id="username" name="username" class="form-control" placeholder="Username">
+                <label for="password"></label>
+                <input id="password" name="password" class="form-control" type="password" placeholder="password"/>
+                <div class="btn-group">
+                <button type="submit" class=" form-inline btn btn-primary btn-lg  " value="Login">Login</button><br>
+                <button type="submit" class=" form-inline btn btn-primary btn-lg " formaction="Html%20Files/registration.html" value="Register!">Register!</button></div>
             </form>
-        </aside>
-        <div class="images">
-            <img src="Media/vetServices.png" class="rounded images" alt="photo">
-            <img src="Media/vetServices.png" class="rounded images" alt="photo">
-        </div>
-
-    </section>
+        </section>
 
     </main>
 
@@ -83,7 +85,7 @@
     <footer class="page-footer font-small indigo">
 
         <form style="text-align: center">
-            <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-pinterest"></i></button>
+            <button class="btn btn-primary btn-lg" formaction="https://www.pinterest.com" type="submit"><i class="fa fa-pinterest"></i></button>
             <button class="btn btn-primary btn-lg" formaction="https://www.facebook.com" type="submit"><i class="fa fa-facebook"></i></button>
             <button class="btn btn-primary btn-lg" formaction="https://twitter.com" type="submit"><i class="fa fa-twitter"></i></button>
             <button class="btn btn-primary btn-lg" formaction="https://instagram.com" type="submit" ><i class="fa fa-instagram"></i></button></form>

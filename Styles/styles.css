@@ -1,5 +1,5 @@
 main{
-    color: lightgray;
+    color: #205964;
     margin-bottom: 15em;
 }
 
@@ -11,12 +11,14 @@ padding-top: 5em;
 }
 .images{
    padding-left: 1.2em;
+    height: 15em;
 }
-aside form label{
-    display: block;
-}
+
 .blog{
     font-size: 1.1em;
+    color: #dae1ff;}
+.bg-light div{
+    color: darkgreen;
 }
 
 .cards{
