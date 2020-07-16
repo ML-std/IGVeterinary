@@ -1,2 +1,2 @@
 # ML-std.github.io
-IG Company Veterinarian Page
+Basic Veterinary page.Created with Using HTML, Bootstrap and JavaScript.
